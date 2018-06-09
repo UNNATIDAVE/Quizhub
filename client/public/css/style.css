@@ -1,0 +1,308 @@
+@import url("//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800%7CRaleway:100,300,600,700,800");
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body{
+  max-width: 100%;  
+  background-image: url("./../images/back.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  margin-bottom: 44px;
+  line-height: 1.57142857;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/*index page style*/
+.jumbotron{
+  background-size: 100% 100%;
+  background-image: url("./../images/head.jpg");
+  height: 150px;
+  background-repeat: no-repeat;
+  padding-top: 3%;
+  padding-top: 0;
+}
+.title{
+  text-align: right;
+  padding-right: 5%;
+  padding-top: 0px;
+  font-size: 1.5em;
+}
+@media screen and (max-width: 480px){
+  .title{
+    font-size: 1em;
+    padding-top: 20px;
+  }
+}
+.hr-title{
+  text-align: center;
+}
+.details{
+  text-align: left;
+  padding-left: 15%;
+  padding-right: 10%;
+  font-size: 1.2em;
+  color: black;
+}
+.detal{
+  color: black;
+}/*index page style end*/
+
+/*TopNav style start*/
+#navbar1 a:hover{
+  background-color: #ff7e44;
+
+}
+.navbar1{
+  background-color: #fee6c4;
+}
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.navbar1 li{
+  word-spacing: 1em;
+}/*TopNav style end*/
+
+/* Footer style start*/
+footer {
+    width: 100%;
+    padding: 15px 0 1% 0;
+    background-color: transparent;
+    text-align: center;
+    /*position: absolute;*/
+    bottom: 0;
+    font-family: 'Cinzel Decorative', cursive;
+}
+footer #footer-copyright p{
+  font-size: 2vmin;
+  color: black;
+  margin: 11px 0 0;
+  font-family: 'Berkshire Swash', cursive;
+}
+
+footer #social-networks a{
+    font-size: 3vmin;
+    color: black;    
+    padding: 1%;
+    transition: 0.2s;
+}
+
+footer #social-networks .support:hover{
+  color: #5994f2;
+} /*footer style end*/
+
+.login-container {
+  max-width: 555px;
+}
+
+.alert {
+  border-width: 0 0 0 3px;
+}
+
+.alert-info {
+  border-color: #31708f;
+}
+
+.alert-success {
+  color: #fff;
+  background-color: #29b35b;
+  border-color: #1d8141;
+}
+
+.alert-danger {
+  color: #b61b17;
+  background-color: #ffcdd2;
+  border-color: #b61b17;
+}
+/* Panels style start */
+
+.panel {
+  border: solid 1px rgba(160, 160, 160, 0.3);
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+.panel-heading {
+  padding: 20px 30px;
+}
+
+.panel-heading + .panel-body {
+  padding-top: 0;
+}
+
+.panel-body {
+  padding: 30px;
+}
+
+.panel-body h3 {
+  margin-top: 0;
+}
+
+.panel-title {
+  font-size: 18px;
+  color: #424242;
+} /* Panels style ens */
+
+/* Buttons style Start */
+
+.btn-toolbar > .btn {
+  float: none;
+  margin-bottom: 5px;
+}
+
+.btn {
+  font-weight: 600;
+  border-radius: 3px;
+}
+
+.btn:focus {
+  outline: 0 !important;
+}
+
+.btn-default {
+  border-color: #ccc;
+  background: #f5f5f5 linear-gradient(to bottom, #fff, #f5f5f5);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08), inset 0 -1px 4px rgba(151, 159, 175, 0.2);
+}
+
+.btn-default:active {
+  background: #e6e6e6 linear-gradient(to bottom, #f0f0f0, #e6e6e6);
+}
+
+.btn-success {
+  border-color: #208a46;
+  background: #29b35b linear-gradient(to bottom, #2ec866, #29b35b);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2), inset 0 1px 1px rgba(255, 255, 255, 0.1), inset 0 -1px 4px rgba(32, 138, 70, 0.3);
+}
+
+.btn-success:active {
+  background: #239a4e linear-gradient(to bottom, #28af59, #239a4e);
+}
+
+.btn-danger {
+  border-color: #8c1512;
+  background: #b61b17 linear-gradient(to bottom, #cc1e1a, #b61b17);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2), inset 0 1px 1px rgba(255, 255, 255, 0.1), inset 0 -1px 4px rgba(140, 21, 18, 0.3);
+}
+
+.btn-danger:active {
+  background: #9b1714 linear-gradient(to bottom, #b11a17, #9b1714);
+}
+
+.btn-facebook {
+  color: #fff;
+  border-color: #335190;
+  background: #3b5998 linear-gradient(to bottom, #4263a9, #3b5998);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2), inset 0 1px 1px rgba(255, 255, 255, 0.1), inset 0 -1px 4px rgba(59, 89, 152, 0.3);
+}
+
+.btn-facebook:hover,
+.btn-facebook:focus {
+  color: #fff;
+}
+
+.btn-google {
+  color: #fff;
+  border-color: #d54331;
+  background: #dd4b39 linear-gradient(to bottom, #e05d4d, #dd4b39);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2), inset 0 1px 1px rgba(255, 255, 255, 0.1), inset 0 -1px 4px rgba(221, 75, 57, 0.3);
+}
+
+.btn-google:hover,
+.btn-google:focus {
+  color: #fff;
+}
+/* Buttons style end */
+
+/* Forms */
+textarea {
+  resize: none;
+}
+
+.form-control {
+  height: auto;
+  padding: 8px 12px;
+  border: 2px solid #ebebeb;
+  border-radius: 0;
+  box-shadow: inset 0 1px 2px rgba(150, 160, 175, 0.1), inset 0 1px 15px rgba(150, 160, 175, 0.05);
+}
+
+.form-group > label {
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+.hr-title {
+  height: auto;
+  margin-top: 20px;
+  border-top: 1px solid;
+  color: #bbb;
+  font-size: 16px;
+  text-align: center;
+  line-height: 20px;
+}
+
+.hr-title span {
+  position: relative;
+  padding: 2px 10px;
+  top: -10px;
+  background-color: #fff;
+  border-radius: 2px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: red;
+  font-weight: bold;
+}
+.red{
+  border-top: 2px solid red;
+  padding-top: 2%
+}
+.testDetails{
+  color: black;
+  font-weight: bold;
+}
+.questions{
+  width: 70%;
+  margin: auto;
+}
+.qnaRed{
+  color: red;
+  font-weight: bold;
+}
+.list-btm-b{
+  border-bottom: 1px solid grey;
+
+}
+.editSingleTest{
+  width: 70%;
+  margin: auto;
+}
+.paginationclass{
+
+margin: 19px 28px;
+}
+.paginationclass span{
+    margin-left:15px;
+    display:inline-block;
+}
+.pagination-controle li{
+    display: inline-block;
+}
+.pagination-controle button{
+    font-size: 12px;
+    margin-top: -26px;
+    cursor:pointer;
+}
+.pagination{
+    margin:5px 12px !important;
+}
+.testsGrid{
+  min-height: 350px;
+}
+.testsGrid:hover{
+  -webkit-box-shadow: 10px 10px 23px -1px rgba(162,32,214,0.7);
+-moz-box-shadow: 10px 10px 23px -1px rgba(162,32,214,0.7);
+box-shadow: 10px 10px 23px -1px rgba(162,32,214,0.7);
+}

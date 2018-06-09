@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html ng-app="quizHub">
+<head>
+  <base href="/">
+  <title>Quiz Hub: Test your self</title>
+	<meta charset="utf-8">
+	<meta name="keyword" content="quiz, quiz hub, online test, online exams">
+	<meta name="description" content="On Quiz Hub you can give a test and check your skills.">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- External Style link -->
+  <link rel="stylesheet" type='text/css' href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+  <link rel="stylesheet" type='text/css' href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="public/css/style.css">
+</head>
+<body>
+  <div ng-include src="'views/header.html'"></div>
+  <div ng-view></div>
+  <!-- Footer Start-->
+    <footer>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-12" id="social-networks">
+		  	  	<a href="mailto:unnatidave11@gmail.com" class="support">Contact Us</a>
+  		  	 	<a href="https://github.com/UNNATIDAVE/got-spa" class="support" target="_blank"> Source Code</a>
+  		  		<a href="https://github.com/UNNATIDAVE" class="support" target="_blank"><i class="fa fa-github"></i> gitHub</a> 
+				    <a href="https://www.linkedin.com/in/unnati-dave-69b74787/" class="support" target="_blank"><i class="fa fa-linkedin"></i></a>
+    	    </div>
+      	  <div class="col-sm-12 col-md-12 col-lg-12" id="footer-copyright">
+  		      <p>Copyright © Online Quiz single page Application by unnatidave </p>
+      	  </div>
+        </div>
+      </div>
+	  </footer>
+	<!-- Footer End -->
+
+  <!-- Links for Javascript Files -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-route.min.js"></script>
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/satellizer/0.14.1/satellizer.js"></script>
+  
+  <script type="text/javascript" src="app.js"></script>
+  <script src="module/route.js"></script>
+
+  <!--Controller-->
+  <script src="controllers/contact.js"></script>
+  <script src="controllers/forgot.js"></script>
+  <script src="controllers/header.js"></script>
+  <script src="controllers/login.js"></script>
+  <script src="controllers/profile.js"></script>
+  <script src="controllers/reset.js"></script>
+  <script src="controllers/signup.js"></script>
+  <script src="controllers/createTest.js"></script>
+  <script src="controllers/viewSingleTest.js"></script>
+  <script src="controllers/admin.js"></script>
+  <script src="controllers/editQuestion.js"></script>
+  <script src="controllers/liveTest.js"></script>
+  <script src="controllers/score.js"></script>
+  <script src="controllers/dashboard.js"></script>
+
+  <!--Services-->
+  <script src="services/account.js"></script>
+  <script src="services/contact.js"></script>
+  <script src="services/api.js"></script>
+</body>
+</html>

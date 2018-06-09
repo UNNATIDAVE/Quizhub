@@ -1,0 +1,1 @@
+var myApp = angular.module('quizHub',['ngRoute','satellizer']);
