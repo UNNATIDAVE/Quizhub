@@ -13,22 +13,20 @@ var request = require('request');
 var errorHandler = require('express-error-handler');
 var methodOverride = require('method-override');
 
-// Models
-var userModel = require('./models/users.js');
-
 // Controllers
 var userController = require('./controllers/user');
 var contactController = require('./controllers/contact');
 var apis = require('./controllers/api');
 mongoose.Promise = global.Promise;
 
-//db connection
-mongoose.connect("mongodb://quiz-hub:quizhub@@ds135760.mlab.com:35760/quizhubdb" ,{useMongoClient: true});
-var db = mongoose.connection;
-
-db.once('open', function(){
-  console.log("Databse connected successfully !!!!!!");
+var dbPath = "mongodb://quizdb:quiz123@ds135760.mlab.com:35760/quizhubdb"
+mongoose.connect(dbPath,{useMongoClient: true});
+mongoose.connection.once('open', function(){
+  console.log("Database connected successfully !!!!!!");
 });
+// Models
+var userModel = require('./models/users.js');
+
 
 //app settings
 app.use(compression());
