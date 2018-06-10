@@ -23,16 +23,7 @@ var apis = require('./controllers/api');
 mongoose.Promise = global.Promise;
 
 //db connection
-/*mongoose.connect(dbPath || process.env.MONGODB_URI );
-mongoose.connection.once('open',function(){
-  console.log("Database Connection Established Successfully.");
-});
-mongoose.connection.on('error', function() {
-  console.log('MongoDB Connection Error. Please make sure that MongoDB is running.');
-  //process.exit(1);
-});
-*/
-mongoose.connect("mongodb://localhost/qui",{useMongoClient: true});
+mongoose.connect("mongodb://quiz-hub:quizhub@@ds135760.mlab.com:35760/quizhubdb" ,{useMongoClient: true});
 var db = mongoose.connection;
 
 db.once('open', function(){
